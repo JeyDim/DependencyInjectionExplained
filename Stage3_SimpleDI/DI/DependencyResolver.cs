@@ -25,9 +25,7 @@ internal class DependencyResolver
         var parameterImplementations = new object[parameterInfos.Length];
 
         for (var i = 0; i < parameterInfos.Length; i++)
-        {
             parameterImplementations[i] = GetService(parameterInfos[i].ParameterType);
-        }
 
         return Activator.CreateInstance(dependency, parameterImplementations);
     }

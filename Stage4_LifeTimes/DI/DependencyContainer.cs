@@ -2,7 +2,7 @@ namespace Stage4_LifeTimes.DI;
 
 internal class DependencyContainer
 {
-    private List<Dependency> _dependencies;
+    private readonly List<Dependency> _dependencies;
     public DependencyContainer()
     {
         _dependencies = new List<Dependency>();
@@ -12,7 +12,7 @@ internal class DependencyContainer
     {
         _dependencies.Add(new Dependency(typeof(T), EDependencyLifetime.Singleton));
     }
-    
+
     public void AddTransient<T>()
     {
         _dependencies.Add(new Dependency(typeof(T), EDependencyLifetime.Transient));

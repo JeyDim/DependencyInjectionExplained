@@ -2,7 +2,7 @@ namespace Stage3_SimpleDI.DI;
 
 internal class DependencyContainer
 {
-    private List<Type> _dependencies;
+    private readonly List<Type> _dependencies;
     public DependencyContainer()
     {
         _dependencies = new List<Type>();

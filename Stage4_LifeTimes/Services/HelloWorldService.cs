@@ -2,8 +2,8 @@ namespace Stage4_LifeTimes.Services;
 
 internal class HelloWorldService
 {
-    private readonly ConsoleService _service;
     private readonly int _random;
+    private readonly ConsoleService _service;
     public HelloWorldService(ConsoleService service)
     {
         _service = service;
