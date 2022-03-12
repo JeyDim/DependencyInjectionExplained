@@ -1,6 +1,6 @@
 namespace Stage1_SimpleDependency.Services;
 
-public class HelloWorldService
+internal class HelloWorldService
 {
     private readonly ConsoleService _service;
     public HelloWorldService(ConsoleService service)

@@ -1,6 +1,6 @@
 namespace Stage1_SimpleDependency.Services;
 
-public class ConsumerService
+internal class ConsumerService
 {
     private readonly HelloWorldService _helloWorldService;
     public ConsumerService(HelloWorldService helloWorldService)
