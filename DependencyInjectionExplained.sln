@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stage2_Activator", "Stage2_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stage3_SimpleDI", "Stage3_SimpleDI\Stage3_SimpleDI.csproj", "{51967593-9306-4066-AD14-DC6E8C342850}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stage4_LifeTimes", "Stage4_LifeTimes\Stage4_LifeTimes.csproj", "{C8F4B335-37E3-4D7D-AEB8-1258D33808F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{51967593-9306-4066-AD14-DC6E8C342850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51967593-9306-4066-AD14-DC6E8C342850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51967593-9306-4066-AD14-DC6E8C342850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F4B335-37E3-4D7D-AEB8-1258D33808F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F4B335-37E3-4D7D-AEB8-1258D33808F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F4B335-37E3-4D7D-AEB8-1258D33808F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F4B335-37E3-4D7D-AEB8-1258D33808F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
