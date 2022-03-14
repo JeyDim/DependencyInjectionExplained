@@ -1,5 +1,5 @@
 ﻿var consoleService = new ConsoleService();
-var helloWorldService = new HelloWorldService(consoleService);
+var helloWorldService = new MessageService(consoleService);
 var consumerService = new ConsumerService(helloWorldService);
 
 consumerService.Print();

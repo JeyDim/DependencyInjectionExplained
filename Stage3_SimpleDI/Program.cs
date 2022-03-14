@@ -1,7 +1,9 @@
-﻿var dependencyContainer = new DependencyContainer();
+﻿using Stage2_Activator.Services;
 
-dependencyContainer.AddDependency<ConsoleService>();
-dependencyContainer.AddDependency<HelloWorldService>();
+var dependencyContainer = new DependencyContainer();
+
+dependencyContainer.AddDependency<ICanSendMessage, ConsoleService>();
+dependencyContainer.AddDependency<MessageService>();
 dependencyContainer.AddDependency<ConsumerService>();
 
 var dependencyResolver = new DependencyResolver(dependencyContainer);

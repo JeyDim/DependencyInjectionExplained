@@ -1,10 +1,10 @@
 namespace Stage4_LifeTimes.Services;
 
-internal class HelloWorldService
+internal class MessageService
 {
+    private readonly ICanSendMessage _service;
     private readonly int _random;
-    private readonly ConsoleService _service;
-    public HelloWorldService(ConsoleService service)
+    public MessageService(ICanSendMessage service)
     {
         _service = service;
         _random = new Random().Next();
@@ -12,6 +12,6 @@ internal class HelloWorldService
 
     public void SayHello()
     {
-        _service.Print($"hw_{_random} Hello World!");
+        _service.SendMessage($"#MS{_random} Hello World!");
     }
 }

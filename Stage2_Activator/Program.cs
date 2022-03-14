@@ -1,5 +1,5 @@
 ﻿var consoleService = Activator.CreateInstance<ConsoleService>();
-var helloWorldService = (HelloWorldService)Activator.CreateInstance(typeof(HelloWorldService), consoleService);
+var helloWorldService = (MessageService)Activator.CreateInstance(typeof(MessageService), consoleService);
 var consumerService = (ConsumerService)Activator.CreateInstance(typeof(ConsumerService), helloWorldService);
 
 consumerService.Print();

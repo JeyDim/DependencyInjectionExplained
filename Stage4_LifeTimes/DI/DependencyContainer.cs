@@ -13,9 +13,19 @@ internal class DependencyContainer
         _dependencies.Add(new Dependency(typeof(T), EDependencyLifetime.Singleton));
     }
 
+    public void AddSingleton<T, T2>()
+    {
+        _dependencies.Add(new Dependency(typeof(T), typeof(T2), EDependencyLifetime.Singleton));
+    }
+
     public void AddTransient<T>()
     {
         _dependencies.Add(new Dependency(typeof(T), EDependencyLifetime.Transient));
+    }
+
+    public void AddTransient<T, T2>()
+    {
+        _dependencies.Add(new Dependency(typeof(T), typeof(T2), EDependencyLifetime.Transient));
     }
 
     public Dependency GetDependency(Type type) =>

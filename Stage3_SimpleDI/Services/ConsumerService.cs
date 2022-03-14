@@ -1,15 +1,15 @@
-namespace Stage3_SimpleDI.Services;
+namespace Stage2_Activator.Services;
 
 internal class ConsumerService
 {
-    private readonly HelloWorldService _helloWorldService;
-    public ConsumerService(HelloWorldService helloWorldService)
+    private readonly MessageService _messageService;
+    public ConsumerService(MessageService messageService)
     {
-        _helloWorldService = helloWorldService;
+        _messageService = messageService;
     }
 
     public void Print()
     {
-        _helloWorldService.SayHello();
+        _messageService.SayHello();
     }
 }

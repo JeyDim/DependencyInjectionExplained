@@ -1,7 +1,7 @@
 ﻿var dependencyContainer = new DependencyContainer();
 
-dependencyContainer.AddSingleton<ConsoleService>();
-dependencyContainer.AddTransient<HelloWorldService>();
+dependencyContainer.AddSingleton<ICanSendMessage, ConsoleService>();
+dependencyContainer.AddTransient<MessageService>();
 dependencyContainer.AddTransient<ConsumerService>();
 
 var dependencyResolver = new DependencyResolver(dependencyContainer);
